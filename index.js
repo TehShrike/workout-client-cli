@@ -1,11 +1,9 @@
 var beeper = require('beeper')
 var Charm = require('charm')
 
-function noop() {}
-
 module.exports = function (io, name) {
 	var charm = Charm(process)
-	var confirm = noop
+	var confirm = null
 
 	function write(str) {
 		charm.display('bright')
@@ -24,11 +22,11 @@ module.exports = function (io, name) {
 
 	charm.on('data', function(data) {
 		var key = data.toString()
-		if (confirm !== noop && (key === 'y' || key === 'Y')) {
+		if (confirm !== null && (key === 'y' || key === 'Y')) {
 			confirm()
 			write('\nSWEET ACTION BRO!\n')
-			confirm = noop
 		}
+		confirm = null
 	})
 
 	io.on('work', function(work) {
