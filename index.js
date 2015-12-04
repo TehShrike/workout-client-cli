@@ -36,6 +36,16 @@ module.exports = function (io, name) {
 		beeper()
 		displayWorkPrompt(write, work)
 	})
+	
+	var timeout = setTimeout(function () {
+		beeper()
+		write('unable to connect')
+		process.exit(1)
+	}, 5000)
+	
+	io.once('connect', function () {
+		clearTimeout(timeout)
+	})
 }
 
 function displayWorkPrompt(write, work) {
