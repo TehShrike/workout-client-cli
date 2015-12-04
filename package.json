@@ -1,6 +1,6 @@
 {
   "name": "workout-client-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get alerted when you should work out",
   "main": "index.js",
   "scripts": {
