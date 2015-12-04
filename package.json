@@ -25,6 +25,7 @@
     "minimist": "1.2.0",
     "socket.io-client": "1.3.7"
   },
+  "preferGlobal": true,
   "bin": {
     "workout-client": "./bin.js"
   },
