@@ -1,0 +1,22 @@
+{
+  "name": "workout-client-cli",
+  "version": "1.0.0",
+  "description": "get alerted when you should work out",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehShrike/workout-client-cli.git"
+  },
+  "keywords": [
+    "workout"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/workout-client-cli/issues"
+  },
+  "homepage": "https://github.com/TehShrike/workout-client-cli#readme"
+}
